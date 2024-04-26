@@ -3,7 +3,9 @@ import Header from './parts/Header'
 export default function App() {
   return (
     <>
-      <Header />
+      <div className='pt-5  w-full'>
+        <Header />
+      </div>
     </>
   )
 }
