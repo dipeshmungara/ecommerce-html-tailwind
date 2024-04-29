@@ -40,7 +40,7 @@ export default function Header() {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex flex-1  sm:items-stretch sm:justify-start">
+                <div className="flex flex-1  sm:items-stretch sm:justify-start hidden md:block lg:block ">
                   <div className="flex flex-shrink-0 items-center">
                     <a href="mailto:abc@gmail.com">
                       abc@gmail.com
@@ -66,7 +66,7 @@ export default function Header() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute inset-y-0 right-0 flex items-center justify-end pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div className="absolute  right-0 flex items-center justify-end pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                   <a href="#" className='text-gray-900  items-center pl-4  text-sm font-medium lg:ml-4  border-l border-slate-900/20 '>Sign Up</a>
                   <a href="#" className='text-gray-900  items-center pl-4  text-sm font-medium lg:ml-4  border-l border-slate-900/20 '>Login</a>
                 </div>
@@ -74,21 +74,38 @@ export default function Header() {
             </div>
           </div>
 
+          <Disclosure.Panel className="sm:hidden">
+            <div className=" bg-black space-y-1 px-2 pb-3 pt-2">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'block rounded-md px-3 py-2 text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
 
 
-
-          <div className=' lg:border-b-2  lg:border-slate-500/10 py-2'>
-            <div className='mx-auto flex w-full  items-center justify-start'>
-              <div className='relative w-full max-w-[1440px] mx-auto flex items-center justify-between'>
-                <div className='flex w-[400px] sm:justify-start'>
+          <div className='lg:border-b-2 w-full lg:border-slate-500/10 py-2'>
+            <div className='lg:mx-auto flex w-full  items-center justify-start'>
+              <div className='sm:block  relative w-full max-w-[1440px] mx-auto md:flex lg:flex items-center justify-between'>
+                <div className='sm:w-full hidden md:block lg:flex w-[400px]  lg:block'>
                   <a href="#">
-                    <img className='w-auto h-10' src={CompanyLogo} alt="CompanyLogo" />
+                    <img className='w-auto h-10 lg:w-15' src={CompanyLogo} alt="CompanyLogo" />
                   </a>
                 </div>
-                <div className='flex w-full ml-10 rounded-md bg-white px-3 lg:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300'>
+                <div className='flex w-full lg:ml-10 rounded-md bg-white px-3 lg:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300'>
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
-                      <Menu.Button className="inline-flex h-10 py-2  w-[150px] justify-centers lg:text-sm font-semibold text-gray-900 mr-5 lg:border-r lg:border-slate-900/30">
+                      <Menu.Button className="inline-flex lg:h-10 lg:py-2  w-[150px] justify-centers lg:text-sm font-semibold text-gray-900 lg:mr-5 lg:border-r lg:border-slate-900/30">
                         All Category
                         <ChevronDownIcon className="ml-2 h-5 w-5 text-gray-400" aria-hidden="true" />
                       </Menu.Button>
@@ -102,7 +119,7 @@ export default function Header() {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"
                     >
-                      <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Items className=" absolute right-0 z-10 mt-2  lg:w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <div className="py-1">
                           <Menu.Item>
                             {({ active }) => (
@@ -147,7 +164,7 @@ export default function Header() {
                       </Menu.Items>
                     </Transition>
                   </Menu>
-                  <div className='w-full flex'>
+                  <div className=' w-full flex'>
                     <div>
                       <button>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mt-1 pt-1">
@@ -156,9 +173,9 @@ export default function Header() {
 
                       </button>
                     </div>
-                    <div className=' w-full mx-w[800px]'>
+                    <div className='sm:w-full sm:max-[400px] lg:w-full lg:max-w[700px]'>
                       <input
-                        className='px-2 h-9 mt-0.5 w-full   focus:outline-none   ml-1 placeholder-gray-400 text-gray-900'
+                        className='sm:h-8.5 px-2 lg:h-9 mt-0.5 w-full focus:outline-none border-0    ml-1 placeholder-gray-400 text-gray-900'
                         type="text"
                         placeholder='Search'
                       // value={query}
@@ -169,9 +186,9 @@ export default function Header() {
                 </div>
 
                 <div>
-                  <div className='flex justify-end ml-8'>
-                    <BellIcon className="h-6 w-6 text-gray-500 mx-5" />
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <div className='sm:mt-5 md:flex md:mt-0 lg:justify-end lg:ml-8 lg:mt-0 lg:flex'>
+                    <BellIcon className=" inline-flex h-6 w-6 text-gray-500 mx-5" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="inline-flex w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                     </svg>
                   </div>
@@ -184,24 +201,7 @@ export default function Header() {
 
 
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
+          
         </>
       )}
     </Disclosure>
