@@ -67,7 +67,7 @@ export default function Header() {
                   </div>
                 </div>
                 <div className="absolute  right-0 flex items-center justify-end pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  <a href="#" className='text-gray-900  items-center pl-4  text-sm font-medium lg:ml-4  border-l border-slate-900/20 '>Sign Up</a>
+                  <a href="#" className='text-gray-900  items-center pl-4  text-sm font-medium mr-2 lg:mr-0    lg:ml-4  border-l border-slate-900/20 '>Sign Up</a>
                   <a href="#" className='text-gray-900  items-center pl-4  text-sm font-medium lg:ml-4  border-l border-slate-900/20 '>Login</a>
                 </div>
               </div>
@@ -173,9 +173,9 @@ export default function Header() {
 
                       </button>
                     </div>
-                    <div className='sm:w-full sm:max-[400px] lg:w-full lg:max-w[700px]'>
+                    <div className='sm:w-full sm:max-[400px] h-10 lg:w-full lg:max-w[700px]'>
                       <input
-                        className='sm:h-8.5 px-2 lg:h-9 mt-0.5 w-full focus:outline-none border-0    ml-1 placeholder-gray-400 text-gray-900'
+                        className=' px-2 h-9 mt-0.5 w-full focus:outline-none border-0    ml-1 placeholder-gray-400 text-gray-900'
                         type="text"
                         placeholder='Search'
                       // value={query}
