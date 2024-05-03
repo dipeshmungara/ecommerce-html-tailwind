@@ -1,7 +1,8 @@
 import Header from './components/Header'
 import Slider from './components/Slider';
 import Category from "./components/Category";
-import FlashSale from "./components/FlashSale";
+import SaleTimer from "./components/SaleTimer";
+import Salelider from "./components/FlashSaleSlider";
 
 export default function App() {
   return (
@@ -10,7 +11,8 @@ export default function App() {
         <Header />
         <Slider />
         <Category />
-        <FlashSale />
+        <SaleTimer/>
+        <Salelider/>
       </div>
     </>
   )

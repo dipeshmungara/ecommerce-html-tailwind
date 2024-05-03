@@ -9,49 +9,59 @@ import Cap from "../images/cap.jpg";
 
 
 
+const category = [
+    {
+        name: 'T-shirt', href: '#', image: Tshirt,
+    },
+    {
+        name: 'Jacket', href: '#', image: Jacket,
+    },
+    {
+        name: 'Shirt', href: '#', image: Shirt,
+    },
+    {
+        name: 'Jeans', href: '#', image: Jeans,
+    },
+    {
+        name: 'Bag', href: '#', image: Bag,
+    },
+    {
+        name: 'Shoes', href: '#', image: Shoes,
+    },
+    {
+        name: 'Watches', href: '#', image: Watches,
+    },
+    {
+        name: 'Cap', href: '#', image: Cap,
+    },
+    {
+        name: 'All Category', href: '#', image: Cap,
+    },
+]
+
 export default function Category() {
     return (
         <>
-            <div className="flex w-full max-w-[1440px] justify-between mx-auto py-12">
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Tshirt} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">T-shirt</a></h3>
-                </div>
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Jacket} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">Jacket</a></h3>
-                </div>
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Shirt} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">Shirt</a></h3>
-                </div>
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Jeans} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">Jeans</a></h3>
-                </div>
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Bag} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">Bag</a></h3>
-                </div>
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Shoes} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">Shoes</a></h3>
-                </div>
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Watches} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">Watches</a></h3>
-                </div>
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Cap} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">Cap</a></h3>
-                </div>
-                <div className="mx-5">
-                    <img className=' h-[90px] w-[90px] rounded-[50%] object-cover' src={Jacket} alt="" />
-                    <h3 className="text-center py-2 text-gray-900 font-bold"><a href="#">All Category</a></h3>
-                </div>
-                
+            <div className="md:flex lg:flex w-full max-w-[1440px] justify-between mx-auto py-12">
+
+                {category.map((item) => (
+                    <div className="grid mx-5 justify-center">
+
+                        <img src={item.image} className=' h-[90px] w-[90px] rounded-[50%] object-cover' alt="" />
+                        <h3 className="text-center py-2 text-gray-900 font-bold">
+                            <a
+                                key={item.name}
+                                href={item.href}
+                            >
+                                {item.name}
+                            </a>
+                        </h3>
+
+                    </div>
+                ))}
+
             </div>
         </>
     )
-    
+
 }
