@@ -3,6 +3,7 @@ import Slider from './components/Slider';
 import Category from "./components/Category";
 import SaleTimer from "./components/SaleTimer";
 import Salelider from "./components/FlashSaleSlider";
+import TodayDeal from "./components/TodaysDealTab";
 
 export default function App() {
   return (
@@ -11,8 +12,11 @@ export default function App() {
         <Header />
         <Slider />
         <Category />
-        <SaleTimer/>
-        <Salelider/>
+        <div className='bg-gray-100'>
+          <SaleTimer />
+          <Salelider />
+        </div>
+        <TodayDeal />
       </div>
     </>
   )

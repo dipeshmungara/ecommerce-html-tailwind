@@ -68,7 +68,7 @@ export default function SaleTimer() {
     return (
         <>
 
-            <div className="w-full  max-w-[1440px] mx-auto lg:flex justify-start mt-10">
+            <div className="w-full  max-w-[1440px] mx-auto lg:flex justify-start mt-10 pt-10">
                 <div className="flex justify-center items-center mr-10 text-[30px]">
                     <AiFillThunderbolt className="bg-black rounded-full text-white p-1 mr-2" />
                     <h1 className="font-semibold">Flash Sale</h1>
