@@ -11,7 +11,6 @@ export default function TodayDeal() {
                 
                 <div className="flex">
                     <div>
-                        LOREM IPSUM
                         <Tabs aria-label="Pills" style="pills">
                             <Tabs.Item active title="Best Seller">
                                 <p className="text-sm text-gray-500 dark:text-gray-400">< BestSeller /></p>

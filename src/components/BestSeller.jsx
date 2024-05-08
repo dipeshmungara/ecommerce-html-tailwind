@@ -1,6 +1,5 @@
 
-import { FaStar } from "react-icons/fa6";
-import { FaCircle } from "react-icons/fa";
+import { FaStar, FaHeart, FaCircle } from "react-icons/fa6";
 
 import jeans from "../images/jeans.jpg";
 import shirt from "../images/graphic-shirt-trendy-design-mockup(1).jpg";
@@ -17,21 +16,20 @@ export default function BestSeller() {
     return (
         <>
             <div className="grid md:grid-cols-3 lg:grid-cols-4">
-                {DealDetail.map((item) => (
+                {DealDetail.map((item, index) => (
+                    <div key={index} className="px-3 py-[30px]">
+                        <div className="relative rounded-2xl shadow-lg">
+                            {/* Wishlist Heart Icon */}
+                            <FaHeart className="absolute top-3 right-3 text-red-500 text-2xl cursor-pointer" />
 
-                    <div className="px-3 py-[30px]">
-                        <div className="rounded-2xl shadow-lg">
-                            <img src={item.image} className='w-full h-[330px] object-cover rounded-t-2xl' alt="" />
+                            {/* Image */}
+                            <img src={item.image} className='w-full h-[330px] object-cover rounded-t-2xl' alt={item.name} />
+
+                            {/* Details */}
                             <div className="px-5 py-3 bg-white rounded-b-2xl">
                                 <h3 className="pb-3 text-gray-900 font-bold">
-                                    <a
-                                        key={item.name}
-                                        href={item.href}
-                                    >
-                                        <div>
-                                            {item.name}
-                                        </div>
-
+                                    <a href={item.href}>
+                                        {item.name}
                                     </a>
                                 </h3>
                                 <div className="flex items-center">
@@ -46,12 +44,14 @@ export default function BestSeller() {
                                     </div>
                                 </div>
                                 <div className="flex justify-start my-3">
-                                    <div className="pr-2 font-semibold	text-black">
+                                    <div className="pr-2 font-semibold text-black">
                                         {item.dsprice}
                                     </div>
-                                    <div className="line-through pl-2 text-pink-600	font-semibold	">
-                                        {item.orgprice}
-                                    </div>
+                                    {item.orgprice && (
+                                        <div className="line-through pl-2 text-pink-600 font-semibold">
+                                            {item.orgprice}
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
