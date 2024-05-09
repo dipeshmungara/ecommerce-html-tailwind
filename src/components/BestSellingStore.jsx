@@ -25,7 +25,7 @@ export default function BestSellingStore() {
                         </div>
 
                     </div>
-                    <div className="grid grid-cols-2 col-span-2">
+                    <div className="grid grid-cols-2 col-span-2 gap-8">
                         <div>{<NikeSaeMall />}</div>
                         <div>c</div>
                         <div>d</div>
