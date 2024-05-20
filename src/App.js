@@ -1,29 +1,20 @@
-import Header from './components/Header'
-import Slider from './components/Slider';
-import Category from "./components/Category";
-import SaleTimer from "./components/SaleTimer";
-import Salelider from "./components/FlashSaleSlider";
-import TodayDeal from "./components/TodaysDealTab";
-import BestSellingStore from "./components/BestSellingStore";
-import Quote from "./components/Quote";
-import Footer from "./components/footer";
+
+import Home from './pages/Home';
+import Product from './pages/Product';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 export default function App() {
   return (
     <>
-      <div className='w-full px-3 lg:px-0'>
-        <Header />
-        <Slider />
-        <Category />
-        <div className='bg-gray-100'>
-          <SaleTimer />
-          <Salelider />
-        </div>
-        <TodayDeal />
-        <BestSellingStore />
-        <Quote />
-        <Footer/>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" >
+            <Route index element={<Home />} />
+            <Route path="product" element={<Product />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

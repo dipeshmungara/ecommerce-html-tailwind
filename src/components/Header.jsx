@@ -2,13 +2,14 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import CompanyLogo from '../images/images.png'
+
 
 const navigation = [
   { name: 'Mitra BeliBeli', href: '#', current: false },
   { name: 'About BeliBeli', href: '#', current: false },
   { name: 'BeliBeli Care', href: '#', current: false },
   { name: 'Promo', href: '#', current: false },
+  { name: 'Product', href: '/product', current: false },
 ]
 
 
@@ -98,7 +99,7 @@ export default function Header() {
             <div className='lg:mx-auto flex w-full  items-center justify-start'>
               <div className='sm:block  relative w-full max-w-[1440px] mx-auto md:flex lg:flex items-center justify-between'>
                 <div className='sm:w-full hidden md:block lg:flex w-[400px]  lg:block'>
-                  <a href="#" className='font-sangira text-2xl tracking-wide	'>
+                  <a href="/" className='font-sangira text-2xl tracking-wide	'>
                     StellarCraft 
                   </a>
                 </div>
