@@ -11,7 +11,7 @@ import Footer from "./components/footer";
 export default function App() {
   return (
     <>
-      <div className='pt-5  w-full px-3 lg:px-0'>
+      <div className='w-full px-3 lg:px-0'>
         <Header />
         <Slider />
         <Category />

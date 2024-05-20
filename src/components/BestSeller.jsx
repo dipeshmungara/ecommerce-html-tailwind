@@ -40,11 +40,11 @@ export default function BestSeller() {
 
                         {/* Item Details */}
                         <div className="px-5 py-3 bg-white rounded-b-2xl">
-                            <h3 className="pb-3 text-gray-900 font-bold">
-                                <a href={item.href}>
+                
+                                <a href={item.href} className="pb-3 text-gray-900 font-bold">
                                     {item.name}
                                 </a>
-                            </h3>
+                            
                             <div className="flex items-center">
                                 <div className="flex items-center text-black">
                                     <FaStar className="text-amber-500 mr-1 text-[20px]" />{item.rating}

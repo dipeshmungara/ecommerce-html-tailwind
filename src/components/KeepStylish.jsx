@@ -20,12 +20,12 @@ export default function KeepStylish() {
             <div className="grid md:grid-cols-3 lg:grid-cols-4">
                 {DealDetail.map((item) => (
 
-                    <div className="px-3 py-[30px]">
+                    <div className="px-3 py-[30px]" key={item.name}>
                         <div className="rounded-2xl shadow-lg">
                             <img src={item.image} className='w-full h-[330px] object-cover rounded-t-2xl' alt="" />
                             <div className="px-5 py-3 bg-white rounded-b-2xl">
-                                <h3 className="pb-3 text-gray-900 font-bold">
-                                    <a
+                                
+                                    <a className="pb-3 text-gray-900 font-bold"
                                         key={item.name}
                                         href={item.href}
                                     >
@@ -34,7 +34,7 @@ export default function KeepStylish() {
                                         </div>
 
                                     </a>
-                                </h3>
+                               
                                 <div className="flex items-center">
                                     <div className="flex items-center text-black">
                                         <FaStar className="text-amber-500 mr-1 text-[20px]" />{item.rating}

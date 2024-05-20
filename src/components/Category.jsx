@@ -45,7 +45,7 @@ export default function Category() {
             <div className="md:flex lg:flex w-full max-w-[1440px] justify-between mx-auto py-12">
 
                 {category.map((item) => (
-                    <div className="grid mx-5 justify-center">
+                    <div className="grid mx-5 justify-center" key={item.name}>
 
                         <img src={item.image} className=' h-[90px] w-[90px] rounded-[50%] object-cover' alt="" />
                         <h3 className="text-center py-2 text-gray-900 font-bold">

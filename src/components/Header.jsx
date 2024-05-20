@@ -98,8 +98,8 @@ export default function Header() {
             <div className='lg:mx-auto flex w-full  items-center justify-start'>
               <div className='sm:block  relative w-full max-w-[1440px] mx-auto md:flex lg:flex items-center justify-between'>
                 <div className='sm:w-full hidden md:block lg:flex w-[400px]  lg:block'>
-                  <a href="#">
-                    <img className='w-auto h-10 lg:w-15' src={CompanyLogo} alt="CompanyLogo" />
+                  <a href="#" className='font-sangira text-2xl tracking-wide	'>
+                    StellarCraft 
                   </a>
                 </div>
                 <div className='flex w-full lg:ml-10 rounded-md bg-white px-3 lg:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300'>

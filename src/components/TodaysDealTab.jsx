@@ -10,25 +10,25 @@ export default function TodayDeal() {
             <div className="w-full max-w-[1440px] mx-auto my-[50px]">
                 
                 <div className="flex">
-                    <div>
+                 
                         <Tabs aria-label="Pills" style="pills">
                             <Tabs.Item active title="Best Seller">
-                                <p className="text-sm text-gray-500 dark:text-gray-400">< BestSeller /></p>
+                                <div className="text-sm text-gray-500 dark:text-gray-400">< BestSeller /></div>
                             </Tabs.Item>
                             <Tabs.Item title="Keep Stylish">
-                                <p className="text-sm text-gray-500 dark:text-gray-400"><KeepStylish /></p>
+                                <div className="text-sm text-gray-500 dark:text-gray-400"><KeepStylish /></div>
                             </Tabs.Item>
                             <Tabs.Item title="Special Discount">
-                                <p className="text-sm text-gray-500 dark:text-gray-400">Content 3</p>
+                                <div className="text-sm text-gray-500 dark:text-gray-400">Content 3</div>
                             </Tabs.Item>
                             <Tabs.Item title="Official Store">
-                                <p className="text-sm text-gray-500 dark:text-gray-400">Content 4</p>
+                                <div className="text-sm text-gray-500 dark:text-gray-400">Content 4</div>
                             </Tabs.Item>
                             <Tabs.Item title="Coveted Product">
-                                <p className="text-sm text-gray-500 dark:text-gray-400">Content 5</p>
+                                <div className="text-sm text-gray-500 dark:text-gray-400">Content 5</div>
                             </Tabs.Item>
                         </Tabs>
-                    </div>
+                  
                 </div>
             </div>
 

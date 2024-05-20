@@ -15,7 +15,11 @@ module.exports = {
       md: "768px",
       lg: "1024px",
     },
+    fontFamily: {
+      sangira: ["Sangira", "sans-serif"]
+    },
     extend: {},
+    
   },
   plugins: [
     flowbite.plugin(),

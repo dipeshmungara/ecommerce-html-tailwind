@@ -1,30 +1,30 @@
 "use client"
 import { Carousel } from "flowbite-react";
-import Clothes1 from "../images/Shoes.jpg"
-
+import Tshirt from "../images/black-tshirt-light-background.jpg"
+import Shirt from "../images/hip-bearded-young-man-putting-blank-sheet-paper-into-huge-front-pocket-his-red-gray-anorak-white-wall.jpg";
+import Jeans from "../images/jeans.jpg";
 
 export default function Component() {
+
     const backgroundImg1 = {
         backgroundImage:
-            "url("+{Clothes1}+")",
+            `url(${Tshirt})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
     };
     const backgroundImg2 = {
-        backgroundImage:
-            "url('https://img.freepik.com/free-vector/fashion-man-set_1284-16523.jpg?t=st=1714389454~exp=1714393054~hmac=1bd48c098712036ab3ef478b3e04a3fe0cc3e4bfebc4297b652a2b3d0468123e&w=826')",
+        backgroundImage: `url(${Shirt})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
     };
     const backgroundImg3 = {
-        backgroundImage:
-            "url('https://img.freepik.com/free-photo/young-man-choosing-cloths-menswear-shop_1303-30814.jpg?t=st=1714389353~exp=1714392953~hmac=79033f34213d800da416ac628cdf56108d6e07d67b5c29dccf8b8d946448516f&w=900')",
+        backgroundImage: `url(${Jeans})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
     };
     return (
         <div className="h-[300px] sm:h-[300px] lg:h-[600px] xl:h-80 2xl:h-96">
-            <Carousel onSlideChange={(index) => console.log('onSlideChange()', index)} >
+            <Carousel >
                 <div className="flex h-full items-center justify-start bg-gray-400 dark:bg-gray-700 bg-blend-multiply text-white" style={backgroundImg1}>
                     <div className="w-full max-w-[1440px] mx-auto">
                         <h3 className="text-[20px] lg:text-[25px] leading-3 text-gray-800">#Big Fashion Sale</h3>

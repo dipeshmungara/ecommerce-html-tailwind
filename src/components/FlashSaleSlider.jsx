@@ -57,12 +57,12 @@ export default function Salelider() {
     };
     return (
         <>
-            <div className="py-5">
+            <div className="pb-[50px]">
                 <Slider {...settings} className="w-full max-w-[1440px] mx-auto">
 
                     {CardsDetail.map((item) => (
 
-                        <div className="px-3 py-[50px]">
+                        <div className="px-3 py-[50px]" key={item.name}>
                             <div className="rounded-2xl shadow-lg">
                                 <img src={item.image} className='w-full h-[330px] object-cover rounded-t-2xl' alt="" />
                                 <div className="px-5 py-3 bg-white rounded-b-2xl">
