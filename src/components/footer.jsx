@@ -4,8 +4,8 @@ export default function Footer() {
     return (
         <>
         
-       <div className="bg-gray-900 py-[50px]">
-        <div className="w-full max-w-[1440px] mx-auto grid grid-cols-5 gap-4">
+       <div className="bg-gray-900 pt-[50px] pb-[20px]">
+                <div className="w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-5 md:grid-cols-5 gap-4 p-5 lg:p-0 md:p-0">
                 <div>
                     <div>
                         <img src={logo} className="h-10 w-10" alt="" />
@@ -56,7 +56,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-slate-400 mb-3 text-[20px]">BeliBeli</h3>
+                    <h3 className="text-slate-400 mb-1 lg:mb-3 md:mb-3 text-[20px] mt-5 lg:mt-0 md:mt-0">BeliBeli</h3>
                     <ul>
                         <li><a href="#" className="text-white text-[16px] leading-loose">About BeliBeli</a></li>
                         <li><a href="#" className="text-white text-[16px] leading-loose">Career</a></li>
@@ -65,7 +65,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                <h3 className="text-slate-400 mb-3 text-[20px]">Buy</h3>
+                        <h3 className="text-slate-400 mb-1 lg:mb-3 md:mb-3 text-[20px] mt-5 lg:mt-0 md:mt-0">Buy</h3>
                     <ul>
                         <li><a href="#" className="text-white text-[16px] leading-loose">Bill & Top Up</a></li>
                         <li><a href="#" className="text-white text-[16px] leading-loose">BeliBeli COD</a></li>
@@ -74,7 +74,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                <h3 className="text-slate-400 mb-3 text-[20px]">Sell</h3>
+                        <h3 className="text-slate-400 mb-1 lg:mb-3 md:mb-3 text-[20px] mt-5 lg:mt-0 md:mt-0">Sell</h3>
                     <ul>
                         <li><a href="#" className="text-white text-[16px] leading-loose">Seller Education Center</a></li>
                         <li><a href="#" className="text-white text-[16px] leading-loose">Brand Index</a></li>
@@ -82,7 +82,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                <h3 className="text-slate-400 mb-3 text-[20px]">Guide And Help</h3>
+                        <h3 className="text-slate-400 mb-1 lg:mb-3 md:mb-3 text-[20px] mt-5 lg:mt-0 md:mt-0">Guide And Help</h3>
                     <ul>
                         <li><a href="#" className="text-white text-[16px] leading-loose">BeliBeli Care</a></li>
                         <li><a href="#" className="text-white text-[16px] leading-loose">Term and Condition</a></li>

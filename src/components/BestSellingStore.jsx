@@ -10,7 +10,7 @@ export default function BestSellingStore() {
             <div className="w-full max-w-[1440px] mx-auto my-[50px]">
                 <h3 className="text-center text-black font-bold text-[30px] mb-10">Best Selleing Store</h3>
 
-                <div className="grid grid-cols-3">
+                <div className="grid grid-cols-1  lg:grid-cols-3">
                     <div>
 
                         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -27,7 +27,7 @@ export default function BestSellingStore() {
                         </div>
 
                     </div>
-                    <div className="grid grid-cols-2 col-span-2 gap-8">
+                    <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 col-span-2 gap-8">
                         <div><NikeSaeMall /></div>
                         <div><BarudakDisasterMall /></div>
                         <div><GalaxyGalleriaMall /></div>

@@ -5,6 +5,8 @@ import SaleTimer from "./components/SaleTimer";
 import Salelider from "./components/FlashSaleSlider";
 import TodayDeal from "./components/TodaysDealTab";
 import BestSellingStore from "./components/BestSellingStore";
+import Quote from "./components/Quote";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         </div>
         <TodayDeal />
         <BestSellingStore />
+        <Quote />
+        <Footer/>
       </div>
     </>
   )

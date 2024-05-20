@@ -26,19 +26,19 @@ export default function NikeSaeMall() {
                 <div className="grid grid-cols-3 mt-5 gap-4">
                     <div className="">
                         <img src={handbag} className="w-full h-[130px] rounded-xl object-cover" alt="" />
-                        <p className="font-medium mt-2 text-[18px] text-center">
+                        <p className="font-medium mt-2 text-[16px] lg:text-[18px] text-center">
                             Rp650.000
                         </p>
                     </div>
                     <div>
                         <img src={cap} className="w-full h-[130px] rounded-xl object-cover" alt="" />
-                        <p className="font-medium mt-2 text-[18px] text-center">
+                        <p className="font-medium mt-2 text-[16px] lg:text-[18px] text-center">
                             Rp99.000
                         </p>
                     </div>
                     <div>
                         <img src={Tshirt} className="w-full h-[130px] rounded-xl object-cover" alt="" />
-                        <p className="font-medium mt-2 text-[18px] text-center">
+                        <p className="font-medium mt-2 text-[16px] lg:text-[18px] text-center">
                             Rp270.000
                         </p>
                     </div>
