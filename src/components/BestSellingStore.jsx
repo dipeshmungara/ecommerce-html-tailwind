@@ -27,10 +27,10 @@ export default function BestSellingStore() {
                         </div>
 
                     <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 col-span-2 gap-6">
-                        <div><NikeSaeMall /></div>
-                        <div><BarudakDisasterMall /></div>
-                        <div><GalaxyGalleriaMall /></div>
-                        <div><AuroraWellMall /></div>
+                        <NikeSaeMall />
+                        <BarudakDisasterMall />
+                        <GalaxyGalleriaMall />
+                        <AuroraWellMall />
                     </div>
                 </div>
             </div>
