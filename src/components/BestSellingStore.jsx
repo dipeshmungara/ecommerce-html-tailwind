@@ -1,6 +1,8 @@
 import NikeSaeMall from "./NikeSaeMall";
-
 import handbag from "../images/handbag.jpg";
+import BarudakDisasterMall from "./BarudakDisasterMall";
+import GalaxyGalleriaMall from "./GalaxyGalleriaMall";
+import AuroraWellMall from "./AuroraWellMall";
 
 export default function BestSellingStore() {
     return(
@@ -26,10 +28,10 @@ export default function BestSellingStore() {
 
                     </div>
                     <div className="grid grid-cols-2 col-span-2 gap-8">
-                        <div>{<NikeSaeMall />}</div>
-                        <div>c</div>
-                        <div>d</div>
-                        <div>e</div>
+                        <div><NikeSaeMall /></div>
+                        <div><BarudakDisasterMall /></div>
+                        <div><GalaxyGalleriaMall /></div>
+                        <div><AuroraWellMall /></div>
                     </div>
                 </div>
             </div>
