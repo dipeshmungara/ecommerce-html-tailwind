@@ -17,7 +17,7 @@ export default function AuroraWellMall() {
                         </div>
                     </div>
                     <div className="ml-7">
-                        <h3 className="text-black font-bold text-[24px]">Nike Sae Mall</h3>
+                        <h3 className="text-black font-bold text-[24px]">Aurora Well Mall</h3>
                         <p className="text-gray-500 text-[18px] font-medium">
                             "Just do it bro!"
                         </p>
