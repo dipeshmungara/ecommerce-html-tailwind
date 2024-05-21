@@ -14,11 +14,11 @@ export default function ProductReview() {
             <div className="w-full max-w-[1440px] mx-auto my-5">
                 <h2 className="text-[22px] font-semibold text-gray-900">Customer Reviews</h2>
                 <div className="lg:flex md:flex border border-gray-300 rounded-lg mt-5 py-5 shadow-sm">
-                    <div className="w-2/5 flex">
+                    <div className="lg:w-2/5 md:w-2/5 flex">
                         <div className="lg:w-1/3 md:w-1/3">
 
                             {/* Circular Progress  */}
-                            <div class="relative w-[15rem] h-[6rem]">
+                            <div class="relative w-[10rem] h-[6rem] lg:w-[15rem] lg:h-[6rem]">
                                 <svg class="size-full" width="25" height="25" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
                                     
                                     <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700" stroke-width="2"></circle>
@@ -36,7 +36,7 @@ export default function ProductReview() {
 
 
                         </div>
-                        <div className="lg:w-2/3 md:w-2/3">
+                        <div className="w-full lg:w-2/3 md:w-2/3">
                             <div className="flex">
                                 <FaStar className="text-amber-400 text-[18px]" />
                                 <FaStar className="text-amber-400 text-[18px]" />
