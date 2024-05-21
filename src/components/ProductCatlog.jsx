@@ -4,6 +4,10 @@ import { LuCrown, LuDot } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { RiMessage2Fill, RiMessage2Line } from "react-icons/ri";
+import { CiHeart } from "react-icons/ci";
+import { LiaShareAltSolid } from "react-icons/lia";
+
+
 
 
 
@@ -12,8 +16,8 @@ export default function ProductCatlog() {
         <>
 
             <div className="w-full max-w-[1440px] mx-auto py-3">
-                <div className="flex gap-12">
-                    <div className="w-3/5">
+                <div className="lg:flex md:flex gap-12">
+                    <div className="lg:w-3/5 md:w-3/5">
                         <div className="flex gap-4">
                             <div className="w-1/7">
                                 <div className="mb-3">
@@ -36,8 +40,8 @@ export default function ProductCatlog() {
                                 <img className="w-full max-w-[720px] h-[450px] object-cover rounded-xl	" src={tshirt} alt="" />
                             </div>
                         </div>
-                        <div className="w-full max-w-[790px] mt-5 border-2 border-inherit rounded-xl p-5">
-                            <div className="grid grid-cols-2 gap-4">
+                        <div className="w-full lg:max-w-[790px] md:max-w-[715px] mt-5 border-2 border-inherit rounded-xl p-5">
+                            <div className="grid lg:grid-cols-2 gap-4">
 
                                 <div className="flex justify-start items-start">
                                     <img src={cap} alt="" className="w-full max-w-[50px] h-[50px] rounded-full object-cover" />
@@ -54,12 +58,12 @@ export default function ProductCatlog() {
                                     </div>
                                 </div>
 
-                                <div className="text-right">
+                                <div className="lg:text-right">
                                     <a className="px-5 py-1 mx-2 border text-[16px] rounded-md	border-black " href="#">Follow</a>
                                     <a className="px-5 py-1 ml-1 border text-[16px] rounded-md	border-black " href="#">Visit Store</a>
                                 </div>
                             </div>
-                            <div className="flex  justify-between mt-3">
+                            <div className="lg:flex justify-between mt-3">
                                 <div className="flex items-center">
                                     <FaStar className="text-slate-400 text-[16px]" />
                                     <p className="ml-2">Rating Store : <strong>96%</strong></p>
@@ -76,7 +80,7 @@ export default function ProductCatlog() {
                         </div>
                     </div>
 
-                    <div className="w-2/5">
+                    <div className=" mt-5 lg:w-2/5 lg:mt-0 md:w-2/5">
                         <h1 className="text-3xl font-semibold">This Ben Hogan Men's Solid Ottoman Golf Polo Shirt</h1>
                         <div className="flex item-center mt-3">
                             <p className="text-[16px]">10k+ Sold</p>
@@ -110,23 +114,23 @@ export default function ProductCatlog() {
                         </div>
 
 
-                        <div className="flex gap-4 mt-3">
-                            <div className="px-6 py-1 text-[16px] font-semibold border border-gray-500 rounded-lg">
+                        <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 mt-3">
+                            <div className="px-6 py-1 text-[16px] text-center font-semibold border border-gray-500 rounded-lg">
                                 <button>S</button>
                             </div>
-                            <div className="px-6 py-1 text-[16px] font-semibold border border-gray-500 rounded-lg bg-gray-800 text-white">
+                            <div className="px-6 py-1 text-[16px] text-center font-semibold border border-gray-500 rounded-lg bg-gray-800 text-white">
                                 <button>M</button>
                             </div>
-                            <div className="px-6 py-1 text-[16px] font-semibold border border-gray-500 rounded-lg">
+                            <div className="px-6 py-1 text-[16px] text-center font-semibold border border-gray-500 rounded-lg">
                                 <button>L</button>
                             </div>
-                            <div className="px-6 py-1 text-[16px] font-semibold border border-gray-500 rounded-lg">
+                            <div className="px-6 py-1 text-[16px] text-center font-semibold border border-gray-500 rounded-lg">
                                 <button>XL</button>
                             </div>
-                            <div className="px-6 py-1 text-[16px] font-semibold border border-gray-500 rounded-lg">
+                            <div className="px-6 py-1 text-[16px] font-semibold text-center border border-gray-500 rounded-lg">
                                 <button>2XL</button>
                             </div>
-                            <div className="px-6 py-1 text-[16px] font-semibold border border-gray-500 rounded-lg">
+                            <div className="px-6 py-1 text-[16px] font-semibold text-center border border-gray-500 rounded-lg">
                                 <button>3XL</button>
                             </div>
 
@@ -138,18 +142,18 @@ export default function ProductCatlog() {
                         <div className="text-gray-800 font-semibold mt-3 border border-gray-800 py-3 rounded-lg  text-center">
                             <a href="#">Add to Bag</a>
                         </div>
-                        <div className="flex gap-20 mt-3">
-                            <div className="flex items-center pr-[20px] border-r border-gray-800">
-                                <RiMessage2Line className="mr-1"/>
+                        <div className="flex gap-6 mt-3">
+                            <div className="flex items-center pr-[20px] border-r border-gray-300">
+                                <RiMessage2Line className="mr-1 text-[18px]"/>
                                 <p>Chat</p>
                             </div>
-                            <div className="flex items-center border-r border-gray-800">
-                                <RiMessage2Line />
-                                <p>Chat</p>
+                            <div className="flex items-center border-r pr-[20px] border-gray-300">
+                                <CiHeart className="mr-1 text-[18px]" />
+                                <p>Wishlist</p>
                             </div>
-                            <div className="flex items-center border-r border-gray-800">
-                                <RiMessage2Line />
-                                <p>Chat</p>
+                            <div className="flex items-center">
+                                <LiaShareAltSolid className="mr-1 text-[18px]" />
+                                <p>Share</p>
                             </div>
                             
                         </div>
