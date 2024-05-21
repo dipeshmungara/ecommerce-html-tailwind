@@ -16,7 +16,25 @@ export default function ProductReview() {
                 <div className="lg:flex md:flex border border-gray-300 rounded-lg mt-5 py-5 shadow-sm">
                     <div className="w-2/5 flex">
                         <div className="lg:w-1/3 md:w-1/3">
-                            a
+
+                            {/* Circular Progress  */}
+                            <div class="relative w-[15rem] h-[6rem]">
+                                <svg class="size-full" width="25" height="25" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                    
+                                    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700" stroke-width="2"></circle>
+                            
+                                    <g class="origin-center -rotate-90 transform">
+                                        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-800 dark:text-blue-500" stroke-width="2" stroke-dasharray="170" stroke-dashoffset="75"></circle>
+                                    </g>
+                                </svg>
+                            
+                                <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                                    <span class="text-center text-2xl font-bold text-gray-800 dark:text-white">4.8</span>
+                                </div>
+                            </div>
+                            {/* End Circular Progress  */}
+
+
                         </div>
                         <div className="lg:w-2/3 md:w-2/3">
                             <div className="flex">
