@@ -28,7 +28,7 @@ export default function ProductInfo() {
             </div>.<div className="product_detail">
                 <ProductDescription />
             </div>
-            <div className="styling_ideas w-full max-w-[1440px] bg-gray-300 my-5">
+            <div className="styling_ideas w-full max-w-[1500px] bg-gray-300 my-5">
                 <ProductStylingIdeas />
             </div>
             <div className="product_review">

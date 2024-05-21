@@ -6,7 +6,7 @@ export default function ProductStylingIdeas() {
     return (
         <>
 
-            <div className="w-full max-w-[1300px]  mx-auto">
+            <div className="w-full max-w-[1350px]  mx-auto">
                 <div className="lg:flex md:flex items-center">
                     <div className="lg:w-3/4 border-r py-8 border-gray-400">
                         <div className="flex justify-between pr-6">
