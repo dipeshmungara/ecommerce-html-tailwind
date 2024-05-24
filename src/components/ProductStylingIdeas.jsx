@@ -7,7 +7,12 @@ export default function ProductStylingIdeas() {
     return (
         <>
 
-            <div className="w-full max-w-[1350px]  mx-auto">
+
+            {/* <div className="relative w-full max-w-[80%] mx-auto bg-gray-300 my-15 ">
+              
+            </div> */}
+
+            <div className="w-full max-w-[1440px] bg-gray-300 my-5 mx-auto">
                 <div className="lg:flex md:flex items-center">
                     <div className="lg:w-3/4 border-r py-8 border-gray-400">
                         <div className="flex justify-between pr-6">
@@ -79,6 +84,8 @@ export default function ProductStylingIdeas() {
                         </button>
                     </div>
                 </div>
+
+                
             </div>
 
 

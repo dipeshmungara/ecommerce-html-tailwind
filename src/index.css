@@ -6,3 +6,26 @@
     font-family: "Sangira";
     src: url("./fonts/sangira-font/Sangira-lglJX.ttf");
 }
+@layer utilities {
+    @variants responsive {
+        .masonry {
+            column-gap: 1.5em;
+            column-count: 1;
+        }
+
+        .masonry-sm {
+            column-gap: 1.2em;
+            column-count:1;
+        }
+
+        .masonry-md {
+            column-gap: 1em;
+            column-count: 2;
+        }
+
+        .break-inside {
+            break-inside: avoid;
+        }
+
+    }
+}

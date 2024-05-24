@@ -20,14 +20,14 @@ export default function ProductReview() {
                             {/* Circular Progress  */}
                             <div class="relative w-[10rem] h-[6rem] lg:w-[15rem] lg:h-[6rem]">
                                 <svg class="size-full" width="25" height="25" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                                    
+
                                     <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700" stroke-width="2"></circle>
-                            
+
                                     <g class="origin-center -rotate-90 transform">
                                         <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-800 dark:text-blue-500" stroke-width="2" stroke-dasharray="170" stroke-dashoffset="75"></circle>
                                     </g>
                                 </svg>
-                            
+
                                 <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
                                     <span class="text-center text-2xl font-bold text-gray-800 dark:text-white">4.8</span>
                                 </div>
@@ -131,143 +131,152 @@ export default function ProductReview() {
 
 
                 <div className="lg:flex md:flex my-5 flex-wrap justify-between">
-                    <div className="w-full lg:w-[49%] md:w-[49%] h-fit border p-5 border-gray-300 rounded-lg my-3 shadow-sm">
-                        <div className="flex  justify-between">
-                            <div className="flex">
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
+                    <div className="masonry sm:masonry-sm md:masonry-md">
+
+                        <div className="w-full  break-inside h-fit border p-5 border-gray-300 mb-4 rounded-lg shadow-sm">
+                            <div className="flex  justify-between">
+                                <div className="flex">
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                </div>
+                                <p className="text-[16px] text-gray-500 font-semibold">08 August 2023</p>
                             </div>
-                            <p className="text-[16px] text-gray-500 font-semibold">08 August 2023</p>
-                        </div>
-                        <h2 className="text-[22px] font-bold text-gray-800">His Favorite shirt!</h2>
-                        <div className="flex items-center">
-                            <p className="text-[16px] text-gray-500 font-semibold">Color : Black</p>
-                            <span className="mx-3 h-1.5 w-1.5 rounded-full bg-gray-500 dark:bg-gray-400" />
-                            <p className="text-[16px] text-gray-500 font-semibold">Size : XL</p>
-                        </div>
-                        <p className="text-[16px] text-gray-500 font-semibold mt-5">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum totam quae itaque vitae! Perferendis fugiat placeat, veniam atque sunt accusamus velit. Nesciunt in voluptatum ea. Dolor rem in velit?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident assumenda sunt alias non rem architecto, neque aperiam minus nam vel, beatae repellendus! Officia totam corrupti, nostrum ducimus ipsam mollitia?
-                        </p>
-
-
-                        <div className="flex items-center gap-6 mt-6">
+                            <h2 className="text-[22px] font-bold text-gray-800">His Favorite shirt!</h2>
                             <div className="flex items-center">
-                                <BiSolidLike className="text-[25px] text-gray-400" />
-                                <p className="ml-2">22</p>
+                                <p className="text-[16px] text-gray-500 font-semibold">Color : Black</p>
+                                <span className="mx-3 h-1.5 w-1.5 rounded-full bg-gray-500 dark:bg-gray-400" />
+                                <p className="text-[16px] text-gray-500 font-semibold">Size : XL</p>
                             </div>
+                            <p className="text-[16px] text-gray-500 font-semibold mt-5">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum totam quae itaque vitae! Perferendis fugiat placeat, veniam atque sunt accusamus velit. Nesciunt in voluptatum ea. Dolor rem in velit?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident assumenda sunt alias non rem architecto, neque aperiam minus nam vel, beatae repellendus! Officia totam corrupti, nostrum ducimus ipsam mollitia?
+                            </p>
+
+
+                            <div className="flex items-center gap-6 mt-6">
+                                <div className="flex items-center">
+                                    <BiSolidLike className="text-[25px] text-gray-400" />
+                                    <p className="ml-2">22</p>
+                                </div>
+                                <div className="flex items-center">
+                                    <BiSolidDislike className="text-[25px] text-gray-400" />
+                                    <p className="ml-2">0</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="w-full break-inside h-fit border p-5 border-gray-300 mb-4 rounded-lg shadow-sm">
+                            <div className="flex  justify-between">
+                                <div className="flex">
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                </div>
+                                <p className="text-[16px] text-gray-500 font-semibold">08 August 2023</p>
+                            </div>
+                            <h2 className="text-[22px] font-bold text-gray-800">His Favorite shirt!</h2>
                             <div className="flex items-center">
-                                <BiSolidDislike className="text-[25px] text-gray-400" />
-                                <p className="ml-2">0</p>
+                                <p className="text-[16px] text-gray-500 font-semibold">Color : Black</p>
+                                <span className="mx-3 h-1.5 w-1.5 rounded-full bg-gray-500 dark:bg-gray-400" />
+                                <p className="text-[16px] text-gray-500 font-semibold">Size : XL</p>
+                            </div>
+                            <p className="text-[16px] text-gray-500 font-semibold mt-5">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum totam quae itaque vitae! Perferendis fugiat placeat, veniam atque sunt accusamus velit. Nesciunt in voluptatum ea. Dolor rem in velit?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque quidem iure nisi eos aspernatur itaque exercitationem quo, totam mollitia ad dignissimos fugiat illo reprehenderit vero nostrum voluptatem omnis tempore?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident assumenda sunt alias non rem architecto, neque aperiam minus nam vel, beatae repellendus! Officia totam corrupti, nostrum ducimus ipsam mollitia?
+                            </p>
+
+
+                            <div className="flex items-center gap-6 mt-6">
+                                <div className="flex items-center">
+                                    <BiSolidLike className="text-[25px] text-gray-400" />
+                                    <p className="ml-2">22</p>
+                                </div>
+                                <div className="flex items-center">
+                                    <BiSolidDislike className="text-[25px] text-gray-400" />
+                                    <p className="ml-2">0</p>
+                                </div>
                             </div>
                         </div>
 
-                    </div>
-                    <div className="w-full lg:w-[49%] md:w-[49%] h-fit border p-5 border-gray-300 rounded-lg my-3 shadow-sm">
-                        <div className="flex  justify-between">
-                            <div className="flex">
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
+                        <div className="w-full break-inside  h-fit border p-5 border-gray-300 mb-4 rounded-lg shadow-sm">
+                            <div className="flex  justify-between">
+                                <div className="flex">
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                </div>
+                                <p className="text-[16px] text-gray-500 font-semibold">08 August 2023</p>
                             </div>
-                            <p className="text-[16px] text-gray-500 font-semibold">08 August 2023</p>
-                        </div>
-                        <h2 className="text-[22px] font-bold text-gray-800">His Favorite shirt!</h2>
-                        <div className="flex items-center">
-                            <p className="text-[16px] text-gray-500 font-semibold">Color : Black</p>
-                            <span className="mx-3 h-1.5 w-1.5 rounded-full bg-gray-500 dark:bg-gray-400" />
-                            <p className="text-[16px] text-gray-500 font-semibold">Size : XL</p>
-                        </div>
-                        <p className="text-[16px] text-gray-500 font-semibold mt-5">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum totam quae itaque vitae! Perferendis fugiat placeat, veniam atque sunt accusamus velit. Nesciunt in voluptatum ea. Dolor rem in velit?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque quidem iure nisi eos aspernatur itaque exercitationem quo, totam mollitia ad dignissimos fugiat illo reprehenderit vero nostrum voluptatem omnis tempore?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident assumenda sunt alias non rem architecto, neque aperiam minus nam vel, beatae repellendus! Officia totam corrupti, nostrum ducimus ipsam mollitia?
-                        </p>
+                            <h2 className="text-[22px] font-bold text-gray-800">His Favorite shirt!</h2>
+                            <div className="flex items-center">
+                                <p className="text-[16px] text-gray-500 font-semibold">Color : Black</p>
+                                <span className="mx-3 h-1.5 w-1.5 rounded-full bg-gray-500 dark:bg-gray-400" />
+                                <p className="text-[16px] text-gray-500 font-semibold">Size : XL</p>
+                            </div>
+                            <p className="text-[16px] text-gray-500 font-semibold mt-5">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum totam quae itaque vitae! Perferendis fugiat placeat, veniam atque sunt accusamus velit. Nesciunt in voluptatum ea. Dolor rem in velit?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi voluptatem reprehenderit eveniet, labore autem dolorum id, officiis sequi nesciunt consequuntur non incidunt veniam, expedita architecto illum. Eaque, aliquam quas?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident assumenda sunt alias non rem architecto, neque aperiam minus nam vel, beatae repellendus! Officia totam corrupti, nostrum ducimus ipsam mollitia?
+                            </p>
 
 
-                        <div className="flex items-center gap-6 mt-6">
+                            <div className="flex items-center gap-6 mt-6">
+                                <div className="flex items-center">
+                                    <BiSolidLike className="text-[25px] text-gray-400" />
+                                    <p className="ml-2">22</p>
+                                </div>
+                                <div className="flex items-center">
+                                    <BiSolidDislike className="text-[25px] text-gray-400" />
+                                    <p className="ml-2">0</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full break-inside  h-fit border p-5 border-gray-300 mb-4 rounded-lg shadow-sm">
+                            <div className="flex  justify-between">
+                                <div className="flex">
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                    <FaStar className="text-amber-400 text-[18px]" />
+                                </div>
+                                <p className="text-[16px] text-gray-500 font-semibold">08 August 2023</p>
+                            </div>
+                            <h2 className="text-[22px] font-bold text-gray-800">His Favorite shirt!</h2>
                             <div className="flex items-center">
-                                <BiSolidLike className="text-[25px] text-gray-400" />
-                                <p className="ml-2">22</p>
+                                <p className="text-[16px] text-gray-500 font-semibold">Color : Black</p>
+                                <span className="mx-3 h-1.5 w-1.5 rounded-full bg-gray-500 dark:bg-gray-400" />
+                                <p className="text-[16px] text-gray-500 font-semibold">Size : XL</p>
                             </div>
-                            <div className="flex items-center">
-                                <BiSolidDislike className="text-[25px] text-gray-400" />
-                                <p className="ml-2">0</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full lg:w-[49%] md:w-[49%] h-fit border p-5 border-gray-300 rounded-lg my-3 shadow-sm">
-                        <div className="flex  justify-between">
-                            <div className="flex">
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                            </div>
-                            <p className="text-[16px] text-gray-500 font-semibold">08 August 2023</p>
-                        </div>
-                        <h2 className="text-[22px] font-bold text-gray-800">His Favorite shirt!</h2>
-                        <div className="flex items-center">
-                            <p className="text-[16px] text-gray-500 font-semibold">Color : Black</p>
-                            <span className="mx-3 h-1.5 w-1.5 rounded-full bg-gray-500 dark:bg-gray-400" />
-                            <p className="text-[16px] text-gray-500 font-semibold">Size : XL</p>
-                        </div>
-                        <p className="text-[16px] text-gray-500 font-semibold mt-5">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum totam quae itaque vitae! Perferendis fugiat placeat, veniam atque sunt accusamus velit. Nesciunt in voluptatum ea. Dolor rem in velit?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident assumenda sunt alias non rem architecto, neque aperiam minus nam vel, beatae repellendus! Officia totam corrupti, nostrum ducimus ipsam mollitia?
-                        </p>
+                            <p className="text-[16px] text-gray-500 font-semibold mt-5">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum totam quae itaque vitae! Perferendis fugiat placeat, veniam atque sunt accusamus velit. Nesciunt in voluptatum ea. Dolor rem in velit?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident assumenda sunt alias non rem architecto, neque aperiam minus nam vel, beatae repellendus! Officia totam corrupti, nostrum ducimus ipsam mollitia?
+                            </p>
 
 
-                        <div className="flex items-center gap-6 mt-6">
-                            <div className="flex items-center">
-                                <BiSolidLike className="text-[25px] text-gray-400" />
-                                <p className="ml-2">22</p>
-                            </div>
-                            <div className="flex items-center">
-                                <BiSolidDislike className="text-[25px] text-gray-400" />
-                                <p className="ml-2">0</p>
+                            <div className="flex items-center gap-6 mt-6">
+                                <div className="flex items-center">
+                                    <BiSolidLike className="text-[25px] text-gray-400" />
+                                    <p className="ml-2">22</p>
+                                </div>
+                                <div className="flex items-center">
+                                    <BiSolidDislike className="text-[25px] text-gray-400" />
+                                    <p className="ml-2">0</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="w-full lg:w-[49%] md:w-[49%] h-fit border p-5 border-gray-300 rounded-lg my-3 shadow-sm">
-                        <div className="flex  justify-between">
-                            <div className="flex">
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                                <FaStar className="text-amber-400 text-[18px]" />
-                            </div>
-                            <p className="text-[16px] text-gray-500 font-semibold">08 August 2023</p>
-                        </div>
-                        <h2 className="text-[22px] font-bold text-gray-800">His Favorite shirt!</h2>
-                        <div className="flex items-center">
-                            <p className="text-[16px] text-gray-500 font-semibold">Color : Black</p>
-                            <span className="mx-3 h-1.5 w-1.5 rounded-full bg-gray-500 dark:bg-gray-400" />
-                            <p className="text-[16px] text-gray-500 font-semibold">Size : XL</p>
-                        </div>
-                        <p className="text-[16px] text-gray-500 font-semibold mt-5">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rerum totam quae itaque vitae! Perferendis fugiat placeat, veniam atque sunt accusamus velit. Nesciunt in voluptatum ea. Dolor rem in velit?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident assumenda sunt alias non rem architecto, neque aperiam minus nam vel, beatae repellendus! Officia totam corrupti, nostrum ducimus ipsam mollitia?
-                        </p>
 
 
-                        <div className="flex items-center gap-6 mt-6">
-                            <div className="flex items-center">
-                                <BiSolidLike className="text-[25px] text-gray-400" />
-                                <p className="ml-2">22</p>
-                            </div>
-                            <div className="flex items-center">
-                                <BiSolidDislike className="text-[25px] text-gray-400" />
-                                <p className="ml-2">0</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
